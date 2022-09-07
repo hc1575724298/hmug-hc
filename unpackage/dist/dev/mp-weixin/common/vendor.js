@@ -9190,17 +9190,18 @@ function normalizeComponent (
 /* 15 */,
 /* 16 */,
 /* 17 */,
-/* 18 */
+/* 18 */,
+/* 19 */
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 19);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 20);
 
 /***/ }),
-/* 19 */
+/* 20 */
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -9231,7 +9232,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 20);
+module.exports = __webpack_require__(/*! ./runtime */ 21);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -9247,7 +9248,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -9978,7 +9979,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 21 */
+/* 22 */
 /*!**********************************************!*\
   !*** /Users/hc/前端学习/课上/小程序/hmug/api/home.js ***!
   \**********************************************/
@@ -9986,7 +9987,7 @@ if (hadRuntime) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getFloorList = exports.getNavList = exports.getBanners = void 0;var _request = _interopRequireDefault(__webpack_require__(/*! @/utils/request.js */ 22));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.getFloorList = exports.getNavList = exports.getBanners = void 0;var _request = _interopRequireDefault(__webpack_require__(/*! @/utils/request.js */ 23));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 //获取首页轮播图
 var getBanners = function getBanners() {return _request.default.get('/home/swiperdata');};
@@ -9998,7 +9999,7 @@ exports.getBanners = getBanners;var getNavList = function getNavList() {return _
 exports.getNavList = getNavList;var getFloorList = function getFloorList() {return _request.default.get('/home/floordata');};exports.getFloorList = getFloorList;
 
 /***/ }),
-/* 22 */
+/* 23 */
 /*!***************************************************!*\
   !*** /Users/hc/前端学习/课上/小程序/hmug/utils/request.js ***!
   \***************************************************/
@@ -10006,8 +10007,8 @@ exports.getNavList = getNavList;var getFloorList = function getFloorList() {retu
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _wx = _interopRequireDefault(__webpack_require__(/*! flyio/dist/npm/wx */ 23));
-var _toast = _interopRequireDefault(__webpack_require__(/*! @/utils/toast.js */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _wx = _interopRequireDefault(__webpack_require__(/*! flyio/dist/npm/wx */ 24));
+var _toast = _interopRequireDefault(__webpack_require__(/*! @/utils/toast.js */ 25));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 var fly = new _wx.default();
 
 fly.config.baseURL = 'https://api-hmugo-web.itheima.net/api/public/v1';
@@ -10045,7 +10046,7 @@ function (err) {
 fly;exports.default = _default;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /*!*******************************************!*\
   !*** ./node_modules/flyio/dist/npm/wx.js ***!
   \*******************************************/
@@ -10852,7 +10853,7 @@ module.exports = function (engine) {
 });
 
 /***/ }),
-/* 24 */
+/* 25 */
 /*!*************************************************!*\
   !*** /Users/hc/前端学习/课上/小程序/hmug/utils/toast.js ***!
   \*************************************************/
