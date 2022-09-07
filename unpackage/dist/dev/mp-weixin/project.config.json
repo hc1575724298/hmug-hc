@@ -6,6 +6,7 @@
   },
   "setting": {
     "urlCheck": false,
+    "es6": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],

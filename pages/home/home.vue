@@ -33,12 +33,13 @@
         <view class="floor-img-box">
           <!-- 左侧大图片的盒子 -->
           <view class="left-img-box">
-            <image class="left-img" :src="item.product_list[0].image_src"
-              :style="{width: item.product_list[0].image_width+'rpx'}"></image>
+            <image @click="goGoodsList(product_list[0].navigator_url)" class="left-img"
+              :src="item.product_list[0].image_src" :style="{width: item.product_list[0].image_width+'rpx'}"></image>
           </view>
           <!-- 右侧 4 个小图片的盒子 -->
           <view class="right-img-box">
-            <view class="right-img-item" v-for="(pic,index) in item.product_list" :key="index" v-if="index !==0">
+            <view @click="goGoodsList(pic.navigator_url)" class="right-img-item"
+              v-for="(pic,index) in item.product_list" :key="index" v-if="index !==0">
               <image :src="pic.image_src" :style="{width: pic.image_width + 'rpx'}" mode="widthFix"></image>
             </view>
           </view>
@@ -89,6 +90,12 @@
       async getFloorList() {
         this.floorList = await getFloorList()
         console.log(this.floorList);
+      },
+      goGoodsList(url) {
+        console.log(url.split('?')[1])
+        uni.navigateTo({
+          url: '/subpkg/goods_list/goods_list?' + url.split('?')[1]
+        })
       }
 
     },
